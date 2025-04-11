@@ -1,0 +1,38 @@
+NETWORK SNIFFER TOOL - COMMAND REFERENCE
+========================================
+
+BASIC COMMANDS
+-------------
+python main.py                     : Start the sniffer with default settings
+python main.py --interface IFACE   : Specify network interface
+python main.py --filter FILTER     : Apply BPF filter
+python main.py --output FILE       : Save output to file
+
+FILTER EXAMPLES
+--------------
+--filter "tcp"                     : Capture only TCP packets
+--filter "udp"                     : Capture only UDP packets
+--filter "port 80"                 : Capture HTTP traffic
+--filter "host 192.168.1.1"       : Capture traffic from/to specific IP
+--filter "src host 192.168.1.1"   : Capture traffic from specific source
+--filter "dst port 443"           : Capture HTTPS destination traffic
+
+OUTPUT OPTIONS
+-------------
+--format json                      : Output in JSON format
+--format csv                       : Output in CSV format
+--format text                      : Output in plain text (default)
+
+CONTROL COMMANDS
+---------------
+Ctrl+C                            : Stop capture
+Ctrl+S                            : Save current capture
+Ctrl+P                            : Pause/Resume capture
+
+EXAMPLES
+--------
+python main.py --interface eth0 --filter "tcp port 80" --output capture.txt
+python main.py --filter "host 192.168.1.1" --format json
+python main.py --interface wlan0 --filter "port 443"
+
+NOTE: Administrator privileges are required to run these commands.
