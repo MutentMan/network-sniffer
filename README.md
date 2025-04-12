@@ -1,5 +1,4 @@
-A network sniffer (also known as a packet sniffer or network analyzer) is a tool used to capture, inspect, and analyze network traffic flowing over a computer network. It can be a software program or hardware device.
-
+A network sniffer (also known as a packet sniffer or network analyzer) is a tool used to capture, inspect, and analyze network traffic flowing over a computer network.
 🔍 Description of a Network Sniffer:
 Function:
 It intercepts and logs data packets traveling across the network. This includes both incoming and outgoing packets.
