@@ -2,7 +2,7 @@
 
 A powerful and user-friendly network packet sniffer built for real-time network traffic analysis and monitoring.
 
-![Python Version](https://img.shields.io/badge/python-3.7%2B-blue)
+![Node.js Version](https://img.shields.io/badge/node-%3E%3D18.0.0-blue)
 ![License](https://img.shields.io/badge/license-Unlicense-green)
 
 ## 🌟 Features
@@ -14,7 +14,6 @@ A powerful and user-friendly network packet sniffer built for real-time network 
 - Easy-to-use command-line interface
 - Detailed packet information display
 - Custom filter support
-- Multiple output formats (JSON, CSV, Text)
 
 ## 🚀 Quick Start
 
@@ -26,33 +25,28 @@ cd network-sniffer
 
 2. Install dependencies:
 ```bash
-# Ensure pip is installed and up to date
-python3 -m ensurepip --upgrade
-python3 -m pip install --upgrade pip
-
-# Install the project and its dependencies
-python3 -m pip install -e .
+npm install
 ```
 
 3. Run the sniffer:
 ```bash
-python sniffer_tool/main.py
+sudo node src/main.js
 ```
 
 ## 📋 Requirements
 
-- Python 3.7 or higher
+- Node.js 18 or higher
 - Administrator/root privileges
 - Network interface card
+- libpcap (on Linux/Mac) or Npcap (on Windows)
 
 ## 🛠️ Usage
 
 Basic usage:
 ```bash
-python main.py                     # Start with default settings
-python main.py --interface eth0    # Specify interface
-python main.py --filter "tcp"      # Capture only TCP packets
-python main.py --output file.txt   # Save to file
+sudo node src/main.js                    # Start with default settings
+sudo node src/main.js -i eth0           # Specify interface
+sudo node src/main.js -f "tcp"          # Capture only TCP packets
 ```
 
 ## 🎯 Use Cases
@@ -91,6 +85,6 @@ This project was developed for [Hackathon Name] to demonstrate advanced network 
 ## 📞 Support
 
 For support, please:
-1. Check the [documentation](docs/)
+1. Check the documentation
 2. Open an issue
 3. Contact the team at [your-email@example.com]
