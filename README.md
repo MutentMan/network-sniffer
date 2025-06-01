@@ -26,7 +26,12 @@ cd network-sniffer
 
 2. Install dependencies:
 ```bash
-pip install -e .
+# Ensure pip is installed and up to date
+python3 -m ensurepip --upgrade
+python3 -m pip install --upgrade pip
+
+# Install the project and its dependencies
+python3 -m pip install -e .
 ```
 
 3. Run the sniffer:

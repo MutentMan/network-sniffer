@@ -1,7 +1,9 @@
 .PHONY: install test build clean
 
 install:
-	pip install -e .
+	python3 -m ensurepip --upgrade
+	python3 -m pip install --upgrade pip
+	python3 -m pip install -e .
 
 test:
 	python -m pytest tests/
