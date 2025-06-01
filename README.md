@@ -19,7 +19,7 @@ A powerful and user-friendly network packet sniffer built for real-time network 
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/yourusername/network-sniffer.git
+git clone https://github.com/MutentMan/network-sniffer.git
 cd network-sniffer
 ```
 
@@ -87,4 +87,4 @@ This project was developed for [Hackathon Name] to demonstrate advanced network 
 For support, please:
 1. Check the documentation
 2. Open an issue
-3. Contact the team at [your-email@example.com]
+3. Contact the team at [Swastik2307203@gmail.com]

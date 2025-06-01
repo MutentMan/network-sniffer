@@ -10,11 +10,11 @@ setup(
         'PyInstaller>=5.13.0'
     ],
     author="Your Team Name",
-    author_email="team@example.com",
+    author_email="Swastik23072003@gmail.com",
     description="A powerful network packet sniffer for network analysis and monitoring",
     long_description=open('README.md').read(),
     long_description_content_type="text/markdown",
-    url="https://github.com/yourusername/network-sniffer",
+    url="https://github.com/MutentMan/network-sniffer",
     classifiers=[
         "Programming Language :: Python :: 3",
         "License :: Public Domain",
