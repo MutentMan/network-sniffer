@@ -1,0 +1,32 @@
+{
+  "name": "network-sniffer",
+  "version": "1.0.0",
+  "description": "A powerful network packet sniffer for network analysis and monitoring",
+  "main": "src/main.js",
+  "scripts": {
+    "start": "node src/main.js",
+    "test": "jest",
+    "build": "pkg ."
+  },
+  "dependencies": {
+    "cap": "^0.2.1",
+    "chalk": "^4.1.2",
+    "commander": "^11.0.0",
+    "pcap": "^3.1.0"
+  },
+  "devDependencies": {
+    "jest": "^29.6.2",
+    "pkg": "^5.8.1"
+  },
+  "bin": "src/main.js",
+  "pkg": {
+    "targets": [
+      "node18-win-x64",
+      "node18-linux-x64",
+      "node18-macos-x64"
+    ],
+    "outputPath": "dist"
+  },
+  "author": "Your Team Name",
+  "license": "Unlicense"
+}
