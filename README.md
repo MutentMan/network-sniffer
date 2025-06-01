@@ -1,99 +1,91 @@
-A network sniffer (also known as a packet sniffer or network analyzer) is a tool used to capture, inspect, and analyze network traffic flowing over a computer network.
+# Network Sniffer 🔍
 
-🔍 Description of a Network Sniffer:
-Function:
-It intercepts and logs data packets traveling across the network. This includes both incoming and outgoing packets.
+A powerful and user-friendly network packet sniffer built for real-time network traffic analysis and monitoring.
 
-Usage:
-Network troubleshooting
-Monitoring network usage
-Detecting malicious activity
-Penetration testing
-Protocol analysis
+![Python Version](https://img.shields.io/badge/python-3.7%2B-blue)
+![License](https://img.shields.io/badge/license-Unlicense-green)
 
-How it works:
-A network interface card (NIC) normally discards all traffic not addressed to it. A sniffer puts the NIC into promiscuous mode, so it captures all packets on the local network segment.
+## 🌟 Features
 
+- Real-time packet capture and analysis
+- Support for TCP and UDP protocols
+- Color-coded output for better readability
+- Cross-platform compatibility (Windows, Linux, Mac)
+- Easy-to-use command-line interface
+- Detailed packet information display
+- Custom filter support
+- Multiple output formats (JSON, CSV, Text)
 
-## Getting Started
+## 🚀 Quick Start
 
-### Running the Tool
-1. Open command prompt as administrator
-2. Navigate to the project directory
-3. Run the command:
-## Getting Started
+1. Clone the repository:
+```bash
+git clone https://github.com/yourusername/network-sniffer.git
+cd network-sniffer
+```
 
-### Basic Controls
-- Start capture: Automatic upon launch
-- Stop capture: Press `Ctrl+C`
+2. Install dependencies:
+```bash
+pip install -e .
+```
 
-## Features
+3. Run the sniffer:
+```bash
+python sniffer_tool/main.py
+```
 
-### Packet Capture
-- Real-time network traffic monitoring
-- Captures both incoming and outgoing packets
-- Supports multiple protocols (TCP, UDP)
+## 📋 Requirements
 
-### Display Information
-- Timestamp
-- Source IP and Port
-- Destination IP and Port
-- Protocol type
-- Packet length
-- TCP flags (for TCP packets)
+- Python 3.7 or higher
+- Administrator/root privileges
+- Network interface card
 
-## Usage
+## 🛠️ Usage
 
-### Reading the Output
-Example output:
+Basic usage:
+```bash
+python main.py                     # Start with default settings
+python main.py --interface eth0    # Specify interface
+python main.py --filter "tcp"      # Capture only TCP packets
+python main.py --output file.txt   # Save to file
+```
 
-Components:
-- Timestamp: When the packet was captured
-- Source: Origin IP and port
-- Destination: Target IP and port
-- Protocol: Network protocol used
-- Length: Size of the packet
-- Flags: TCP flags (if applicable)
+## 🎯 Use Cases
 
-### Color Coding
-- Yellow: Timestamp
-- Green: Source information
-- Red: Destination information
-- Blue: Protocol type
+- Network troubleshooting
+- Security analysis
+- Network traffic monitoring
+- Protocol analysis
+- Educational purposes
 
-## Troubleshooting
+## 🔒 Security Note
 
-### Common Issues
+This tool should only be used on networks you own or have explicit permission to monitor. Unauthorized network monitoring may be illegal in your jurisdiction.
 
-1. **Permission Denied**
-   - Solution: Run the program as administrator
+## 🤝 Contributing
 
-2. **No Packets Captured**
-   - Check network interface connection
-   - Verify administrator privileges
-   - Ensure antivirus isn't blocking the tool
+Contributions are welcome! Please read our [Contributing Guidelines](CONTRIBUTING.md) for details on how to submit pull requests, report issues, and contribute to the project.
 
-3. **Installation Errors**
-   - Verify Python version
-   - Try reinstalling dependencies
-   - Check for system compatibility
+## 📜 License
 
-## Legal Considerations
+This project is licensed under the Unlicense - see the [LICENSE](LICENSE) file for details.
 
-### Important Notes
-- Only use on networks you own or have explicit permission to monitor
-- Network sniffing without authorization may be illegal
-- Respect privacy and data protection laws
-- For educational and administrative purposes only
+## 🏆 Hackathon Project
 
-### Best Practices
-- Obtain necessary permissions before use
-- Document your monitoring activities
-- Handle captured data securely
-- Follow organizational security policies
+This project was developed for [Hackathon Name] to demonstrate advanced network monitoring capabilities while maintaining user-friendly interaction. Our goal was to create a tool that both beginners and experienced network administrators would find valuable.
 
-## Support
-For technical issues or questions:
-- Check documentation
-- Review code comments
-- Consult with network administrator
+### Team Members
+- [Your Name]
+- [Team Member 2]
+- [Team Member 3]
+
+### Awards and Recognition
+- [Any awards or recognition received]
+- [Positive feedback from judges]
+
+## 📞 Support
+
+For support, please:
+1. Check the [documentation](docs/)
+2. Open an issue
+3. Contact the team at [your-email@example.com]
